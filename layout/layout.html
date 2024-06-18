@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enunciado 2 - Exercício de Programação - 2023/2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="layout.css">
+</head>
+<body>
+    <main class="container-fluid row">
+        <div class="menu col-4">
+            <div class="card  " style="width: 18rem;">
+            
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJcAAACUCAMAAACp1UvlAAAAMFBMVEXk5ueutLersbTo6erh4+S1ur3O0dO5vsHe4OLR1NbU19nEyMqorrLb3t/Hy82xt7oCU+LkAAADjklEQVR4nO2bzXbrIAyEDQJjAzbv/7YX7CS3buMYhCWyYBY9/dl8ZxASgekwdHV1dXV1dXV1dXV1dXV1dXURCgDUEqXSd61hHoJBWaeD2BXMOKXftRYMo5FeipeklHpdGrsGygXxA+rJJoxt6BkM7g3UTuaNbQUGNpxQ7evpVBuy1Z9TbWRhaQCm9AeznmQjO9gSLqmiPDfYlEOVHFtZwaYst/gdy8aKjs1sYGCuS/4H2MQEBmMJlhCGCUtd9K0/hjkWw8pWcQNbOLjmUqy4kgyGgSnGEoJ+hoMtrK4kSV/6KLuEn6i5FgwWw5Zcy6s+KShiLo3CEoJ4GpX21KfkSopVOoL+S9NyoXbjZhhpgQG2vIS3lFz558E/fpGeD3HdaxNlBwOL56Kc3TDjuTQlF7pNxI7fub6H61vrq4KLdD9W9AnSE1hFv6e9qEBz0c7Hrz1PII/RsU1QYsXBjT2vOlquAWkX+Y2mQy4k8RUFsoNJ+hsKVKfw5BcUMGIqn/bT0C4ElhwZuBBnHQ67EBVGX11JUNpbme5XByjtYeSXX0+V3d+zPUTCVMDFtYobWH7XJx/YR7A5s/YZBtARzGYtJa9bD7BrMs9YWy+w6XpX8j8jD1tK4WORSd0qqQDT+du7DLwvyEewweq3nknpuF5Dz9AWE+RhC8QfzNo+1QQw2dVI733Ei1+DGVunhp6CIcW/5nGc7fQFEauX4Jfa8wxKTXZenTFahyRtnEu2qe2vTZhgikA6SP+77JNC5JsXZu+iTctq9q133lYTbtwDiqviQI1OZwzHB512M30OLGUcjTgLyZ2gCWEsqWsA9jS491k+OLKmloYOjmpzLY5xCs9gmN+PwgI0M95NFqk+ZRyzycJ8KxnY4kzOGdmN8VFQ6Nvet2Q3nYBgxFf7W7BbMgvRrFupNjJTXWXxE+ztWKn+K6sM1vuhdrKqj0pwFTWuAKv4IF6e2CsCw2IRVPwBTCOrPyOYXQdmUG9ZtG7tYOWGkdbWC6z4uodwJx7ByhyrecguAytrsIoJS5RdVrMU166i2q+IlRTLF5wu+KhEQYQU/7iOUnayAh/eQILlGcZsV34T46USmRUGiNx/pbIOifioC54r5yiW9w9e98pfL2SDZUz/+3TtFzZQUqWMYYROQNcoIxTZwi4RLuM72CBVpa6OYdkPsffqsoPF87NsIH85u3+/XXDpqr66urq6uroY9Q/jASt2DGsuNgAAAABJRU5ErkJggg==" class="img-fluid text-center" alt="...">
+                
+                <div class="card-body">
+                  <h5 class="card-title text-center">User Silva</h5>
+                  <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <ul class="list-unstyled text-center">
+                    <li><a href=”#”>Link 1</a></li>
+                    <li><a href=”#”>Link 2</a></li>
+                    <li><a href=”#”>Link 3</a></li>
+                    <li><a href=”#”>Link 4</a></li>
+                    </ul>
+                </div>
+              </div>
+        </div>
+    <div class="conteudo  col-8">
+            <div class="row  listas">
+                <h1 class="text-center">Lista de tarefas</h1>
+                <div class="col bg-light">
+                    <h1 class="text-center">Dia</h1>
+                    <ul class="list-group" id="lista1">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                        <li class="list-group-item">A fourth item</li>
+                        <li class="list-group-item">And a fifth one</li>
+                      </ul>
+                      <input type="text" id="input1">
+                      <button class="btn btn-primary" onclick="adicionarItemNaLista()"> adicionar item</button>
+                </div>
+
+                <div class="col bg-light">
+                    <h1 class="text-center">Noite</h1>
+                    <ul class="list-group " id="lista2">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                        <li class="list-group-item">A fourth item</li>
+                        <li class="list-group-item">And a fifth one</li>
+                      </ul>
+                      <input type="text" id="input2">
+                      <button class="btn btn-primary" onclick="adicionarItemNaLista2()"> adicionar item</button>
+                </div>
+            </div>
+            
+    </div>
+    
+    </main>
+    
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="layout.js"></script>
+</html>
